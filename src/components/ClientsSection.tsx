@@ -76,7 +76,7 @@ const ClientsSection: React.FC = () => {
               <img
                 src={client.logoSrc}
                 alt={client.altText || client.name}
-                className="max-h-24 w-auto object-contain grayscale hover:grayscale-0 transition duration-300"
+                className="max-h-24 w-auto object-contain md:grayscale hover:grayscale-0 transition duration-300"
                 title={client.name}
               />
             </div>
