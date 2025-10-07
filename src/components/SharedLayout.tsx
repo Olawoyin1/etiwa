@@ -2,10 +2,12 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollTT";
 
 const SharedLayout = () => {
   return (
     <div className="flex flex-col min-h-screen">
+      <ScrollToTop/>
       {/* Navbar always on top */}
       <Navbar />
 
