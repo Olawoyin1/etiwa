@@ -68,7 +68,7 @@ const AccreditedLogos: React.FC = () => {
               <img
                 src={acc.logoSrc}
                 alt={acc.altText || acc.name}
-                className="max-h-24 w-auto object-contain grayscale hover:grayscale-0 transition duration-300"
+                className="max-h-24 w-auto object-contain md:grayscale hover:grayscale-0 transition duration-300"
                 title={acc.name}
               />
             </div>

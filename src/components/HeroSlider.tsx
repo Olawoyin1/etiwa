@@ -62,20 +62,17 @@ function Hero() {
       };
 
   return (
-    <div className="relative w-full min-h-screen">
-      {/* Navbar on top */}
-      <div className="absolute top-0 left-0 w-full z-10">
-        <Navbar />
-      </div>
+    <div className="relative w-full h-120 md:h-screen">
+     
 
       {/* Fullscreen slider below */}
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="relative cf main cursor-grab min-h-screen">
+          <div key={index} className="relative cf main cursor-grab md:h-screen">
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-screen object-cover"
+              className="w-full h-120 md:h-screen object-cover"
             />
             <div className="absolute inset-0 bg-black/65  flex flex-col items-center justify-center z-10">
 
