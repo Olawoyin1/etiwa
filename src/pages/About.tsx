@@ -1,3 +1,4 @@
+import ClientsSection from "../components/ClientsSection"
 import IntroSplitCards from "../components/Intro"
 import MeetOurTeam from "../components/MeetOurTeam"
 import MissionSection from "../components/MissionSection"
@@ -21,6 +22,7 @@ const About = () => {
 
         <IntroSplitCards />
         <MissionSection />
+        <ClientsSection />
         <MeetOurTeam />
     </div>
   )

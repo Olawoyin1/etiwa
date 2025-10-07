@@ -90,7 +90,7 @@ const SmoothScrollTestimonials: React.FC = () => {
           {infiniteTestimonials.map((t, idx) => (
             <div key={`${t.id}-${idx}`} className="px-6">
               <div className="bg-white rounded border border-gray-300 p-2 hover:shadow transition-all duration-500">
-                <div className="bg-gray-50 h-90 p-7 flex flex-col justify-between">
+                <div className="bg-gradient-to-br from-[#70BF49]/10 to-[#0062A7]/10 h-90 p-7 flex flex-col justify-between">
                   <div>
                     <p className="text-gray-700 text-lg leading-relaxed mb-6">{t.quote}</p>
                   </div>

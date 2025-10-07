@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
  
 
   return (
-    <footer className="">
+    <footer className="bg-gradient-to-br from-[#70BF49]/10 to-[#0062A7]/10">
       
 
       {/* Footer Content */}
@@ -104,7 +104,7 @@ Estate, Abijo, Ibeju Lekki, Lagos, Nigeria</p>
               </li>
             </ul>
 
-            <div className="bg-gradient-to-r from-green-200 to-emerald-100 p-5 rounded-xl border border-white/20 text-sm">
+            <div className="bg-gradient-to-r from-green-100 to-emerald-50 p-5 rounded-xl border border-white/20 text-sm">
               <h4 className="font-semibold uppercase mb-3">Office Hours</h4>
               <p className="flex justify-between"><span>Mon - Fri:</span> <span className="font-semibold">8:00 - 5:00</span></p>
               <p className="flex justify-between"><span>Saturday:</span> <span className="font-semibold">9:00 - 2:00</span></p>

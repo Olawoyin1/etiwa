@@ -11,6 +11,7 @@ import Blog from "../pages/Blog";
 import Services from "../pages/Services";
 import Career from "../pages/Career";
 import Contact from "../pages/Contact";
+import Progress from "../components/Progress";
 
 
 
@@ -56,6 +57,10 @@ export default function AnimatedRoutes() {
         <Route
           path="/services"
           element={<PageWrapper><Services /></PageWrapper>}
+        />
+        <Route
+          path="*"
+          element={<PageWrapper><Progress /></PageWrapper>}
         />
         
         

@@ -1,75 +1,83 @@
 import React from "react";
 
-interface Accreditor {
+interface Partner {
   id: string;
   name: string;
-  logoSrc: string; // path or URL to the logo image
+  logoSrc: string; 
   altText?: string;
 }
 
-const accreditors: Accreditor[] = [
+const partners: Partner[] = [
   {
     id: "nbte",
     name: "National Board for Technical Education (NBTE)",
-    logoSrc: "../../Images/a.png",
+    logoSrc: "../../Images/p1.png",
     altText: "NBTE Logo",
   },
   {
     id: "coren",
     name: "Council for the Regulation of Engineering in Nigeria (COREN)",
-    logoSrc: "../../Images/b.png",
+    logoSrc: "../../Images/p2.jpg",
     altText: "COREN Logo",
   },
   {
     id: "cpd-uk",
     name: "CPD Certification Service (UK)",
-    logoSrc: "../../Images/c.png",
+    logoSrc: "../../Images/p3.png",
     altText: "CPD UK Logo",
   },
   {
-    id: "nbte",
+    id: "nbte2",
     name: "National Board for Technical Education (NBTE)",
-    logoSrc: "../../Images/d.png",
+    logoSrc: "../../Images/p4.png",
     altText: "NBTE Logo",
   },
   {
-    id: "coren",
+    id: "coren2",
     name: "Council for the Regulation of Engineering in Nigeria (COREN)",
-    logoSrc: "../../Images/e.jpeg",
+    logoSrc: "../../Images/p5.png",
     altText: "COREN Logo",
   },
   {
-    id: "cpd-uk",
+    id: "cpd-uk2",
     name: "CPD Certification Service (UK)",
-    logoSrc: "../../Images/f.jpeg",
+    logoSrc: "../../Images/p6.png",
     altText: "CPD UK Logo",
   },
-  // add more as needed
 ];
 
-const AccreditedLogos: React.FC = () => {
+const PartnersSection: React.FC = () => {
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 md:px-0 text-center">
-        <div className="inline-block mb-4 bg-[#FFF9F0] text-[#7D6007] text-sm font-semibold px-10 py-3 rounded-xl">Officially Accredited</div>
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 text-center">
+        {/* Tagline */}
+        <div className="inline-block mb-4 bg-[#F4F1E8] text-[#7D6007] text-sm font-semibold px-10 py-3 rounded-xl">
+          Trusted by Industry Leaders
+        </div>
+
+        {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          We Are Accredited Locally & Globally
+          Our Valued Partners
         </h2>
-        <p className="text-lg text-gray-600 mb-12">
-          We are proud to be recognized by regulatory bodies both within Nigeria and internationally.
+
+        {/* Subheading */}
+        <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+          We’re proud to collaborate with leading organizations and institutions
+          that share our mission to empower and transform lives.
         </p>
 
+        {/* Logos Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-center">
-          {accreditors.map((acc) => (
-             <div
-              key={acc.id}
+          {partners.map((partner) => (
+            <div
+              key={partner.id}
               className="flex items-center justify-center p-4 hover:scale-105 transition-transform duration-300"
             >
               <img
-                src={acc.logoSrc}
-                alt={acc.altText || acc.name}
+                src={partner.logoSrc}
+                alt={partner.altText || partner.name}
                 className="max-h-24 w-auto object-contain grayscale hover:grayscale-0 transition duration-300"
-                title={acc.name}
+                title={partner.name}
               />
             </div>
           ))}
@@ -79,4 +87,4 @@ const AccreditedLogos: React.FC = () => {
   );
 };
 
-export default AccreditedLogos;
+export default PartnersSection;

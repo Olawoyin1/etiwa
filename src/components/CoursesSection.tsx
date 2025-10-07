@@ -67,7 +67,7 @@ export default function CoursesSection() {
               <div
                 className="
                   absolute bottom-0 left-0 right-0 
-                  bg-black/70 text-white 
+                  bg-gradient-to-br from-[#70BF49]/80 to-[#0062A7]/90 
                   px-6 py-4 
                   transition-all duration-500
                   group-hover:translate-y-[0%]
@@ -77,13 +77,13 @@ export default function CoursesSection() {
                 "
               >
                 {/* Title - always visible */}
-                <h3 className="text-xl font-semibold mb-3">{course.title}</h3>
+                <h3 className="text-white font-semibold mb-3">{course.title}</h3>
 
                 {/* Hidden content - revealed on hover */}
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <p className="text-sm text-gray-300 mb-6">{course.description}</p>
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white">
+                  <p className="text-sm  mb-6">{course.description}</p>
 
-                  <div className="flex items-center gap-6 text-sm text-gray-300 mb-6">
+                  <div className="flex items-center gap-6 text-sm mb-6">
                     <div className="flex items-center gap-2">
                       <Clock className="h-4 w-4" />
                       <span>{course.duration}</span>
@@ -97,16 +97,16 @@ export default function CoursesSection() {
                   <div>
                     <h4 className="mb-3 font-semibold text-white">What you get</h4>
                     <ul className="space-y-1">
-                      <li className="flex items-center gap-2 text-gray-300 text-sm">
+                      <li className="flex items-center gap-2 text-white text-sm">
                         <IoCheckmark /> 5-Month Internship Simulation
                       </li>
-                      <li className="flex items-center gap-2 text-gray-300 text-sm">
+                      <li className="flex items-center gap-2 text-white text-sm">
                         <IoCheckmark /> Mentorship guidance
                       </li>
-                      <li className="flex items-center gap-2 text-gray-300 text-sm">
+                      <li className="flex items-center gap-2 text-white text-sm">
                         <IoCheckmark /> 4-Month Learning Phase
                       </li>
-                      <li className="flex items-center gap-2 text-gray-300 text-sm">
+                      <li className="flex items-center gap-2 text-white text-sm">
                         <IoCheckmark /> Live class sessions
                       </li>
                     </ul>
