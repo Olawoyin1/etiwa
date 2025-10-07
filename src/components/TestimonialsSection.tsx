@@ -49,21 +49,27 @@ const testimonials: Testimonial[] = [
 const infiniteTestimonials = [...testimonials, ...testimonials, ...testimonials];
 
 const SmoothScrollTestimonials: React.FC = () => {
-  const settings = {
+   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 2, // ✅ Desktop default
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 9000, // slower = smoother
+    speed: 9000,
     cssEase: "linear",
     pauseOnHover: true,
     arrows: false,
-    swipe: false, // optional: disable swipe so it keeps scrolling
+    swipe: true, // ✅ Enable swipe on mobile
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1024, // Tablets
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 768, // Mobile
         settings: {
           slidesToShow: 1,
         },
