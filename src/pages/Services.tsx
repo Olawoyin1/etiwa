@@ -1,6 +1,6 @@
 import {      CheckCircle, Zap, Target, Shield } from "lucide-react"
 import { motion } from "framer-motion"
-import { GraduationCap, Award, Sparkles, Wrench } from "lucide-react";
+import { GraduationCap, Award, Sparkles } from "lucide-react";
 
 import { GoTasklist } from "react-icons/go";
 import { MdOutlineHouseSiding } from "react-icons/md";
